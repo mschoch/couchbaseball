@@ -37,11 +37,14 @@ There is no default route for / yet, so try these URLs (or variants thereof)
     
 ### Screenshots
 
-Player Stats
-!(https://raw.github.com/mschoch/couchbaseball/master/doc/people.png)
+Player Stats:
 
-Game Listing for Team/Season
-!(https://raw.github.com/mschoch/couchbaseball/master/doc/teamseason.png)
+![Player](https://raw.github.com/mschoch/couchbaseball/master/doc/people.png)
 
-Individual Game
-!(https://raw.github.com/mschoch/couchbaseball/master/doc/game.png)
+Game Listing for Team/Season:
+
+![TeamSeason](https://raw.github.com/mschoch/couchbaseball/master/doc/teamseason.png)
+
+Individual Game:
+
+![Game](https://raw.github.com/mschoch/couchbaseball/master/doc/game.png)
