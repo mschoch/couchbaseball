@@ -1,0 +1,8 @@
+#!/bin/sh
+
+FILES=files/events/$1/*.cw
+for f in $FILES
+do
+  echo "Processing $f file..."
+  rails r app/tools/loadevents.rb $f
+done

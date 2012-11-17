@@ -1,0 +1,33 @@
+<ul class="breadcrumb">  
+  <li class="active">Teams</li>  
+</ul>
+
+<h3>Current Teams</h3>
+
+<table width="50%">
+<tr>
+  <th>Team</th>
+  <th>Games</th>
+</tr>
+<% @currentTeams.each do |team| %>
+  <tr>
+    <td align="center"><%= link_to team.key[1], team_path(team.key[1]) %></td>
+    <td align="center"><%= team.value%></td>
+  </tr>
+<% end %>
+</table>
+
+<h3>All Teams</h3>
+
+<table width="50%">
+<tr>
+  <th>Team</th>
+  <th>Games</th>
+</tr>
+<% @teams.each do |team| %>
+  <tr>
+    <td align="center"><%= link_to team.key[0], team_path(team.key[0]) %></td>
+    <td align="center"><%= team.value%></td>
+  </tr>
+<% end %>
+</table>

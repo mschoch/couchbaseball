@@ -1,0 +1,18 @@
+<ul class="breadcrumb">  
+  <li class="active">Seasons</li>  
+</ul>
+
+<h3>All Seasons</h3>
+
+<table width="50%">
+<tr>
+  <th>Season</th>
+  <th>Games</th>
+</tr>
+<% @seasons.each do |season| %>
+  <tr>
+    <td align="center"><%= link_to season.key[0], season_path(season.key[0]) %></td>
+    <td align="center"><%= season.value/2%></td>
+  </tr>
+<% end %>
+</table>

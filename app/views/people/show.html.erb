@@ -1,0 +1,25 @@
+<ul class="breadcrumb">
+  <li>
+    <%=link_to "People", people_path()%> <span class="divider">></span>
+  </li>    
+  <li class="active"><%=@person.first%> <%=@person.last%></li>  
+</ul>
+
+<h3><%=@person.first%> <%=@person.last%></h3>
+
+<table width="50%">
+<tr>
+    <th>Year</th>
+    <% @stat_categories.each do |category| %>
+        <th align="center"><%=category[:display]%></th>
+    <% end %>
+</tr>
+<% @all_stats.each do |season,stats| %>
+  <tr>
+    <td align="center"><%= season %></td>
+    <% @stat_categories.each do |category| %>
+        <td align="center"><%=stats[category[:key]]%></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

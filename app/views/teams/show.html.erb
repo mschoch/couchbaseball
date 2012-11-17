@@ -1,0 +1,21 @@
+<ul class="breadcrumb">
+  <li>
+    <%=link_to "Teams", teams_path()%> <span class="divider">></span>
+  </li>    
+  <li class="active"><%=@team%></li>  
+</ul>
+
+<h3>Team <%=@team%></h3>
+
+<table width="50%">
+<tr>
+  <th>Season</th>
+  <th>Games</th>
+</tr>
+<% @teamseasons.each do |teamseason| %>
+  <tr>
+    <td align="center"><%= link_to teamseason.key[1], team_season_path(teamseason.key[0]+teamseason.key[1]) %></td>
+    <td align="center"><%= teamseason.value%></td>
+  </tr>
+<% end %>
+</table>

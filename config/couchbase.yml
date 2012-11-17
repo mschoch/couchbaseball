@@ -1,0 +1,19 @@
+common: &common
+  hostname: localhost
+  port: 8091
+  username: Administrator
+  password: password
+  pool: default
+
+development:
+  <<: *common
+  bucket: couchbaseball
+
+test:
+  <<: *common
+  bucket: couchbaseball
+
+# set these environment variables on your production server
+production:
+  <<: *common
+  bucket: couchbaseball

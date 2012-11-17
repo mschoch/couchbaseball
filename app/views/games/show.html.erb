@@ -1,0 +1,12 @@
+Game <%= @game.id %>
+
+<table width="100%">
+  <tr>
+    <td>
+      <h3>Home: <%=@game.home["id"] %> - <%=@game.home["score"] %></h3>
+    </td>
+    <td>
+      <h3>Visitor: <%=@game.visitor["id"] %> - <%=@game.visitor["score"] %></h3>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,2 @@
+#!/bin/sh
+rails r app/tools/loadpeople.rb files/people/people.csv
