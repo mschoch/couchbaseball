@@ -33,6 +33,26 @@ You will also need to install the Chadwick: Software Tools for Game-Level Baseba
 
 There is no default route for / yet, so try these URLs (or variants thereof)
 
+Person:
+http://localhost:3000/people/poseb001
+
+List Teams:
+http://localhost:3000/teams
+
+Team:
+http://localhost:3000/teams/SFN
+
+List Season:
+http://localhost:3000/seasons
+
+Season:
+http://localhost:3000/seasons/2011
+
+Team/Season:
+http://localhost:3000/team_season/SFN2011
+
+Individual Game:
+http://localhost:3000/games/LAN201104030
 
     
 ### Screenshots
