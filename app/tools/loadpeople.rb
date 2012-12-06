@@ -8,7 +8,7 @@ class LoadPeople
       csv = CSV.parse(file)
       csv.each { |row|
         
-        p = Person.new
+        p = Person.find_by_id("person_" + row[2]) || Person.new
         p.fromCSVRow(row)
         #print "#{g.inspect}\n"
         p.save
