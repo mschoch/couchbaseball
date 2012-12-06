@@ -25,6 +25,9 @@ class Event < Couchbase::Model
   attribute :stolenBases
   attribute :caughtStealing
   attribute :pickedOff
+  attribute :date
+  attribute :inning
+  attribute :halfInning
   
   view :individual_atbats
   view :individual_hits
@@ -205,6 +208,9 @@ class Event < Couchbase::Model
     fielders = [{}, pitcher, catcher, firstBase, secondBase, thirdBase, shortStop, leftField, centerField, rightField]
 
     self.id = "event_" + gameId + "-" + eventNum
+    self.date = gameId[3..6] + "-" + gameId[7..8] + "-" + gameId[9..10]
+    self.inning = inning
+    self.halfInning = halfInning
     self.game = gameId
     self.number = eventNum
     self.batter = resBatter
