@@ -1,0 +1,2 @@
+#!/bin/sh
+rails r app/tools/loadgames.rb files/games/GL$1.TXT
