@@ -1,3 +1,4 @@
+![Logo](https://raw.github.com/mschoch/couchbaseball/master/doc/couchbaseball_logo.png)
 ## Couchbaseball
 
 A web application to interact with baseball history using Couchbase Server 2.0 to store and process the data.
